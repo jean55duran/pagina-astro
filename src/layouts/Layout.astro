@@ -12,39 +12,813 @@ const { title } = Astro.props;
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
+		<title>Pagina Steam</title>
 	</head>
-	<body>
-		<slot />
+	<body class="m-0 p-0 bg-[#1B2838]">
+		<!-- etiquetas semanticas?? -->
+		<!-- <slot />  -->
+		<header class="h-[100px] bg-[#161d24]">
+			<div class="container max-w-[1200px] mx-auto">
+				<div
+					class="ml-[12%] flex h-[80px] w-[55.5%] float-left items-center text-[#fff5f5] uppercase font-sans mt-3"
+				>
+					<img
+						class="w-40"
+						src="https://store.akamai.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016"
+						alt=""
+					/>
+
+					<menu>
+						<li class="ml-[10px] inline-block">
+							<a
+								class="text-[16px] font-semibold text-[#fff5f5] hover:text-[blue]"
+								href="">Tienda</a
+							>
+						</li>
+						<li class="ml-[10px] inline-block">
+							<a
+								class="text-[16px] font-semibold text-[#fff5f5] hover:text-[blue]"
+								href="">Comunidad</a
+							>
+						</li>
+						<li class="ml-[10px] inline-block">
+							<a
+								class="text-[16px] font-semibold text-[#fff5f5] hover:text-[blue]"
+								href="">Acerca de</a
+							>
+						</li>
+						<li class="ml-[10px] inline-block">
+							<a
+								class="text-[16px] font-semibold text-[#fff5f5] hover:text-[blue]"
+								href="">Soporte</a
+							>
+						</li>
+					</menu>
+				</div>
+				<div
+					class="float-left text-[#fff5f5] font-sans mt-1 items-center"
+				>
+					<a
+						href="#####"
+						class="btn-download text-[#fff5f5] text-[13px] bg-green-700 py-[2px] px-3 inline-flex hover:text-[white] hover:bg-green-900"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="size-4 m-1"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M9 8.25H7.5a2.25 2.25 0 0 0-2.25 2.25v9a2.25 2.25 0 0 0 2.25 2.25h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25H15M9 12l3 3m0 0 3-3m-3 3V2.25"
+							></path></svg
+						>
+						intalar Steam
+					</a>
+					<a class="text-[#fff5f5] mx-2 text-[13px]" href=""
+						>Iniciar Sesion
+					</a>
+					<a class="text-[#fff5f5] mx-2 text-[13px]" href="">|</a>
+					<a class="text-[#fff5f5] mx-2 text-[13px]" href="">Idioma</a
+					>
+				</div>
+			</div>
+		</header>
+
+		<div
+			class="h-[480px] flex bg-center bg-cover bg-no-repeat max-h-full bg-[url('https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2515020/capsule_616x353.jpg?t=1726590088')]"
+		>
+			<div
+				class="mt-6 menups pt-2- bg-[#0c426ed2] flex h-9 w-[50.5%] justify-between ml-[26%] items-center font-sans list-none px-2 font-medium text-white text-[14px]"
+			>
+				<li><a class="" href="">Tu tienda</a></li>
+				<li><a class="" href="">Nuevo y destacable</a></li>
+				<li><a class="" href="">Categorias</a></li>
+				<li><a class="" href="">Tienda de puntos</a></li>
+				<li><a class="" href="">Noticas</a></li>
+				<li><a class="" href="">Laboratorios</a></li>
+				<input
+					class="ml-10 mr-1 bg-[#232d63] text-[#161d24] h-6 rounded-md"
+					type="text"
+					placeholder="buscar"
+				/>
+				<button class="p-0">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="size-6"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+						></path>
+					</svg>
+				</button>
+			</div>
+		</div>
+		<div class="flex h-[480px]">
+			<div
+				class="menu-opccion ml-[12.5%] list-none h-[500px] w-[200px] flex-wrap font-sans mt-2"
+			>
+				<li class="mt-3 mb-4 hover:text-[white]">
+					<img
+						class="h-16"
+						src="https://store.akamai.steamstatic.com/public/images//gift/steamcards_promo_03.png?v=1"
+						alt=""
+					/>
+
+					<a href="">
+						<h1
+							class="text-[#5e79f5] text-[15px] uppercase font-sans font-medium"
+						>
+							Targetas regalo de Steam
+						</h1>
+						<h1
+							class="text-[#5e79f5] text-[15px] uppercase font-sans font-medium"
+						>
+							Regala diversion
+						</h1>
+					</a>
+				</li>
+				<li class="mt-3 mb-4">
+					<h1
+						class="text-[#5e79f5] text-[15px] uppercase font-sans font-medium"
+					>
+						Vistos recientemente
+					</h1>
+					<a
+						class="text-white flex hover:text-[blue] text-[13px]"
+						href="">juego1</a
+					>
+					<a
+						class="text-white flex hover:text-[blue] text-[13px]"
+						href="">juego2</a
+					>
+				</li>
+				<li class="mt-3 mb-4">
+					<h1
+						class="text-[#5e79f5] text-[15px] uppercase font-sans font-medium"
+					>
+						recomedados
+					</h1>
+					<a
+						class="text-white flex hover:text-[blue] text-[13px]"
+						href="">amigos</a
+					>
+					<a
+						class="text-white flex hover:text-[blue] text-[13px]"
+						href="">mentores</a
+					>
+				</li>
+				<li class="mt-3 mb-4">
+					<h1
+						class="text-[#5e79f5] text-[15px] uppercase font-sans font-medium"
+					>
+						Explorar Categorias
+					</h1>
+					<a
+						class="text-white flex hover:text-[blue] text-[13px]"
+						href="">lo mas vendido</a
+					>
+					<a
+						class="text-white flex hover:text-[blue] text-[13px]"
+						href="">novedades</a
+					>
+					<a
+						class="text-white flex hover:text-[blue] text-[13px]"
+						href="">lo mas barato</a
+					>
+				</li>
+				<li class="mt-3 mb-4">
+					<h1
+						class="text-[#5e79f5] text-[15px] uppercase font-sans font-medium"
+					>
+						explorar por generos
+					</h1>
+					<a
+						class="text-white flex hover:text-[blue] text-[13px]"
+						href="">free to play</a
+					>
+					<a
+						class="text-white flex hover:text-[blue] text-[13px]"
+						href="">accion</a
+					>
+					<a
+						class="text-white flex hover:text-[blue] text-[13px]"
+						href="">aventura</a
+					>
+					<a
+						class="text-white flex hover:text-[blue] text-[13px]"
+						href="">aventura</a
+					>
+					<a
+						class="text-white flex hover:text-[blue] text-[13px]"
+						href="">aventura</a
+					>
+					<a
+						class="text-white flex hover:text-[blue] text-[13px]"
+						href="">aventura</a
+					>
+					<a
+						class="text-white flex hover:text-[blue] text-[13px]"
+						href="">aventura</a
+					>
+					<a
+						class="text-white flex hover:text-[blue] text-[13px]"
+						href="">aventura</a
+					>
+					<a
+						class="text-white flex hover:text-[blue] text-[13px]"
+						href="">aventura</a
+					>
+				</li>
+			</div>
+			<div
+				class="recomendado w-[980px] h-[480px] mr-[4%] ml-[2%] bg-gradient-to-b via-[#1B2838] from-[#1B2838] to-blue-950 via-80%"
+			>
+				<h1
+					class="text-[15px] mb-1 ml-5 text-white mt-5 font-sans font-normal"
+				>
+					DESTACADOS Y RECOMENDADOS
+				</h1>
+				<div class="contenido flex list-none ml-5 font-serif">
+					<div
+						class=" hover:cursor-pointer h-[360px] w-[60%] bg-[#fff5f5] bg-no-repeat bg-cover bg-[url('https://gaming-cdn.com/images/products/7678/orig/black-myth-wukong-pc-game-steam-europe-and-us-and-canada-cover.jpg?v=1724142714')] shadow-[3px_3px_8px_#00000066]"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="size-20 absolute my-auto text-white :"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M15.75 19.5 8.25 12l7.5-7.5"></path>
+						</svg>
+					</div>
+					<a href="">
+						<div
+							class="h-[360px] w-[40%] bg-gray-900 shadow-[3px_3px_8px_#00000066]"
+						>
+							<a href="">
+								<li
+									class="mt-2 mb-2 text-[20px] ml-5 text-[#fff5f5]"
+								>
+									Black Myth: Wukong
+								</li>
+								<div class="flex flex-wrap">
+									<img
+										class="h-[80px] w-[180px] mb-2"
+										src="https://i.pcmag.com/imagery/articles/03limhbAT0XKk6oWJuIJEXx-2.fit_lim.v1721332127.jpg"
+										alt=""
+									/>
+									<img
+										class="h-[80px] w-[180px] mb-2 ml-2"
+										src="https://cdn2.unrealengine.com/gs-screenshot-015-3840x2160-53080145a0c4.jpg?resize=1&w=1920"
+										alt=""
+									/>
+									<img
+										class="h-[80px] w-[180px] mb-2"
+										src="https://d1q3zw97enxzq2.cloudfront.net/images/black_myth_wukong_scr.width-1000.bgcolor-000.format-jpeg_yzXoNbG.jpg"
+										alt=""
+									/>
+									<img
+										class="h-[80px] w-[180px] mb-2 ml-2"
+										src="https://sm.pcmag.com/t/pcmag_me/review/b/black-myth/black-myth-wukong_e8hc.1920.jpg"
+										alt=""
+									/>
+								</div>
+								<h1
+									class="text-[20px] text-[#fff5f5] ml-5 my-0"
+								>
+									Ya disponible
+								</h1>
+								<h2
+									class="text-[14px] h-5 w-28 bg-gray-400 text-center ml-5 rounded text-[#fff5f5]"
+								>
+									Lo mas vendido
+								</h2>
+								<h3
+									class="ml-5 mb-3 text-[13px] text-[#fff5f5] mt-11 font-sans"
+								>
+									COL$ 199.000
+								</h3>
+							</a>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="baner3 container max-w-[1200px] mx-auto font-sans mt-2">
+			<!-- <div class="contb1">
+				<a href="">
+					<img
+						class="container h-[200px] w-[80%] flex ml-[12%] shadow-[3px_3px_8px_#00000066] hover:shadow-blue-400"
+						src="https://www.hd-tecnologia.com/imagenes/articulos/2021/02/Steam-da-inicio-a-Game-Festival-con-descuentos-y-mas-de-500-demos-de-juegos-3.jpg"
+						alt=""
+					/>
+				</a>
+			</div> -->
+			<h1
+				class="ml-[12%] mt-10 font-medium text-white text-[15px] uppercase mb-3"
+			>
+				ofertas especiales
+			</h1>
+			<div class="ofertas ml-[12%] w-[80%] flex h-[400px]">
+				<div
+					class="bg-gradient-to-b from-[#6fd1f5] to-blue-600 w-[320px] mr-3 mb-3 shadow-[3px_3px_8px_#00000066]"
+				>
+					<img
+						class="h-[250px]"
+						src="https://phantom-marca.unidadeditorial.es/a1971afbd9030f3979dbb1dc2989a139/resize/1200/f/jpg/assets/multimedia/imagenes/2023/08/14/16920229037351.jpg"
+						alt=""
+					/>
+					<h1
+						class="text-white text-[15px] ml-[20px] mt-2 uppercase font-sans"
+					>
+						Oferta de entre semana
+					</h1>
+					<h2 class="text-blue-300 mt-2 font-sans text-[14px] ml-5">
+						la oferta termina el 30 de septiembre
+					</h2>
+					<div class="h-[40px] w-[200px] ml-5 mt-2 flex">
+						<h1
+							class="text-[30px] flex font-semibold text-[#3aff09] bg-[#5ba32b]"
+						>
+							-80%
+						</h1>
+						<div class="bg-slate-500">
+							<h1
+								class="text-gray-700 text-[10px] ml-8 uppercase line-through"
+							>
+								col$ 229.000
+							</h1>
+							<h1 class="uppercase text-[#3aff09] ml-2">
+								col$ 45.000
+							</h1>
+						</div>
+					</div>
+				</div>
+				<div
+					class="bg-gradient-to-b from-[#6fd1f5] to-blue-600 w-[320px] mr-3 mb-3 shadow-[3px_3px_8px_#00000066]"
+				>
+					<img
+						class="h-[250px]"
+						src="https://images5.alphacoders.com/981/981500.jpg"
+						alt=""
+					/>
+					<h1
+						class="text-white text-[15px] ml-[20px] mt-2 uppercase font-sans"
+					>
+						Oferta de entre semana
+					</h1>
+					<h2 class="text-blue-300 mt-2 font-sans text-[14px] ml-5">
+						la oferta termina el 30 de septiembre
+					</h2>
+					<div class="h-[40px] w-[200px] ml-5 mt-2 flex">
+						<h1
+							class="text-[30px] flex font-semibold text-[#3aff09] bg-[#5ba32b]"
+						>
+							-80%
+						</h1>
+						<div class="bg-slate-500">
+							<h1
+								class="text-gray-700 text-[10px] ml-8 uppercase line-through"
+							>
+								col$ 229.000
+							</h1>
+							<h1 class="uppercase text-[#3aff09] ml-2">
+								col$ 45.000
+							</h1>
+						</div>
+					</div>
+				</div>
+				<div>
+					<div
+						class="bg-gradient-to-b from-[#6fd1f5] to-blue-300 w-[320px] h-[188px] mb-3 shadow-[3px_3px_8px_#00000066]"
+					>
+						<img
+							class="h-[130px] w-[320px]"
+							src="https://www.nintendo.com/eu/media/images/10_share_images/games_15/nintendo_switch_4/H2x1_NSwitch_DarkSoulsRemastered.jpg"
+							alt=""
+						/>
+						<div class="flex h-[40px] w-[320px] mt-2">
+							<h1 class="pl-2 h-5 text-[14px]">
+								!Oferta del dia¡
+							</h1>
+							<div class="ml-3 flex bg-slate-500">
+								<h1
+									class="text-[25px] flex font-semibold text-[#3aff09] bg-[#5ba32b] pr-2 pl-1"
+								>
+									-80%
+								</h1>
+								<h1
+									class="text-[20px] uppercase text-[#3aff09] ml-2 mt-1 pr-2"
+								>
+									col$ 45.000
+								</h1>
+							</div>
+						</div>
+					</div>
+					<div
+						class="bg-gradient-to-b from-[#99fcff] to-blue-300 w-[320px] h-[188px] mb-3 shadow-[3px_3px_8px_#00000066]"
+					>
+						<img
+							class="h-[130px] w-[320px]"
+							src="https://www.elespectador.com/resizer/v2/LOMC6L6CKRAGFGPIQUKVLQKEPI.jpg?auth=a1c7aff99f05291f99011bf7772700e88b7f2a083402e8fcbd3a91fa04fbec70&width=920&height=613&smart=true&quality=60"
+							alt=""
+						/>
+						<div class="flex h-[40px] w-[320px] mt-2">
+							<h1 class="pl-2 h-5 text-[14px]">
+								!Oferta del dia¡
+							</h1>
+							<div class="ml-3 flex bg-slate-500">
+								<h1
+									class="text-[25px] flex font-semibold text-[#3aff09] bg-[#5ba32b] pr-2 pl-1"
+								>
+									-80%
+								</h1>
+								<h1
+									class="text-[20px] uppercase text-[#3aff09] ml-2 mt-1 pr-2"
+								>
+									col$ 45.000
+								</h1>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="mt-10 ml-[12%]">
+				<h1 class="text-white mb-3 font-medium text-[15px] uppercase">
+					Explorar por categorias
+				</h1>
+				<div
+					class="inline-flex items-end w-[225px] hover:cursor-pointer mr-4 h-[200px] hover:scale-110 duration-300 bg-cover bg-[url('https://i.3djuegos.com/juegos/17520/fotos/ficha/-5245513.webp')]"
+				>
+					<h1
+						class="uppercase bg-red-700 mx-auto mb-10 text-center text-white font-bold h-0"
+					>
+						casuales
+					</h1>
+				</div>
+				<div
+					class="inline-flex items-end w-[225px] mr-4 h-[200px] hover:cursor-pointer hover:scale-110 duration-300 bg-cover bg-[url('https://shared.akamai.steamstatic.com//store_item_assets/steam/apps/1846380/hero_capsule.jpg?t=1725523430')]"
+				>
+					<h1
+						class="uppercase mb-10 mx-auto text-white font-bold h-0"
+					>
+						CARRERAS
+					</h1>
+				</div>
+				<div
+					class="inline-flex items-end w-[225px] mr-4 h-[200px] hover:cursor-pointer hover:scale-110 duration-300 bg-cover bg-[url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQM8fOzeqkbIWza-KJ3ieXmENymf98AeHBgQ&s')]"
+				>
+					<h1
+						class="uppercase bg-blue-100 mx-auto mb-10 text-white font-bold h-0"
+					>
+						aventuras
+					</h1>
+				</div>
+				<div
+					class="inline-flex items-end w-[225px] mr-4 h-[200px] hover:cursor-pointer hover:scale-110 duration-300 bg-cover bg-[url('https://media.revistagq.com/photos/628f7826a66472e9837148e9/16:9/w_2560%2Cc_limit/The%2520Quarry%2520-%2520Key%2520Art%25204K.jpg')]"
+				>
+					<h1
+						class="uppercase bg-blue-100 mb-10 mx-auto text-white font-bold h-0"
+					>
+						terror
+					</h1>
+				</div>
+			</div>
+		</div>
+
+		<div
+			class="mt-7 group items-center hover:cursor-pointer duration-300 transition-colors hover:bg-blue-700 rounded inline-flex bg-blue-500 text-white py-2 px-4"
+		>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				fill="none"
+				viewBox="0 0 24 24"
+				stroke-width="1.5"
+				stroke="currentColor"
+				class="size-4 mr-1 mt-[3] group-hover:animate-spin"
+			>
+				<path
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"
+				></path>
+			</svg>
+
+			Presioname
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				fill="none"
+				viewBox="0 0 24 24"
+				stroke-width="1.5"
+				stroke="currentColor"
+				class="size-4 mt-[3px] ml-1"
+			>
+				<path
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"></path>
+			</svg>
+		</div>
 	</body>
 </html>
-<style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
+<style>
+	html,
+	body {
+		background-color: rgb(24, 48, 68);
 	}
-	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
+	/* header {
+		height: 100px;
+		background: #161d24;
+	} */
+	/* .container {
+		margin: 0 auto;
+		max-width: 1200px;
+	} */
+	/* .flex-menu {
+		display: flex;
+		height: 80px;
+		width: 60%;
+		float: left;
+		align-items: center;
+		color: #fff5f5;
+		font-family: sans-serif;
+		text-transform: uppercase;
+	} */
+	/* .flex-menu li {
+		margin-left: 10px;
+		list-style: none;
+		display: inline-block;
+	} */
+	/* .flex-menu a {
+		font-weight: 600;
+		color: #fff5f5;
+		text-decoration: none;
 	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
+	.flex-menu a:hover {
+		color: #ffffff;
 	}
+	.flex-menu img {
+		width: 180px;
+	}
+	.menu-rigth {
+		float: left;
+		width: 40%;
+		color: #fff5f5;
+		font-family: sans-serif;
+		margin-top: 5px;
+	}
+	.menu-rigth a {
+		text-decoration: none;
+		color: #b3b3b3;
+		margin: 0 6px;
+		font-size: 13px;
+	} */
+	/* .btn-download {
+		color: #ffffff;
+		background-color: rgb(37, 172, 37);
+		display: inline-block;
+		padding: 4px 10px;
+		font-family: sans-serif;
+		text-decoration: none;
+		display: inline-flex;
+		align-items: center;
+		gap: 6px;
+	}
+
+	.btn-download svg {
+		height: 18px;
+	}
+	.btn-download:hover {
+		background-color: rgb(95, 255, 95);
+	}*/
+	/* 
+	.baner {
+		background-image: url(https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2515020/capsule_616x353.jpg?t=1726590088);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		height: 480px;
+		display: flex;
+	}
+
+	.menups {
+		margin-top: 30px;
+		background-color: rgba(63, 80, 236, 0.418);
+		display: flex;
+		height: 35px;
+		width: 60%;
+		justify-content: space-between;
+		margin-left: 25%;
+		align-items: center;
+		font-family: sans-serif;
+		list-style-type: none;
+	}
+	.menups a {
+		margin-left: 10px;
+		list-style: none;
+		display: inline-block;
+		font-size: 14px;
+		font-weight: 500px;
+		color: antiquewhite;
+		text-decoration: none;
+	}
+		*/
+	/* .menups input {
+		margin-left: 40px;
+		margin-right: 5px;
+		background: rgb(35, 45, 99);
+		color: #161d24;
+		height: 25px;
+		border-radius: 6px;
+		border: 0;
+	} */
+
+	/* .baner2 {
+		height: 370px;
+		display: flex;
+	}
+
+	.menu-opccion {
+		height: 500px;
+		width: 200px;
+		flex-wrap: wrap;
+		list-style-type: none;
+		font-family: sans-serif;
+	}
+	.menu-opccion li {
+		margin-top: 10px;
+		margin-bottom: 30px;
+	}
+	.menu-opccion h1 {
+		color: #5e79f5;
+		font-size: 14px;
+		font-weight: 500px;
+	}
+	.menu-opccion a > h1:hover {
+		color: #fff5f5;
+	}
+	.menu-opccion a {
+		font-weight: 500px;
+		text-decoration: none;
+		color: #fff5f5;
+		display: block;
+		font-size: 13px;
+	}
+	.menu-opccion a:hover {
+		color: #2e80fc;
+	}
+	.menu-opccion li h1,
+	.menu-opccion li a {
+		margin: 0; 
+	} */
+	/* .recomendado {
+		width: 100%;
+		font-family: sans-serif;
+		display: block; 
+	}
+
+	.recomendado h1 {
+		font-size: 15px;
+		margin-bottom: 10px;
+		margin-left: 20px;
+		color: #fff5f5;
+		font-weight: 200;
+	} */
+
+	/* .contenido {
+		display: flex;
+		list-style-type: none;
+		margin-left: 20px;
+		font-family: sans-serif;
+	}
+
+	.cara {
+		height: 320px;
+		width: 60%;
+		background-color: #fff5f5;
+		background-image: url("https://gaming-cdn.com/images/products/7678/orig/black-myth-wukong-pc-game-steam-europe-and-us-and-canada-cover.jpg?v=1724142714");
+		background-size: cover;
+		background-position: center;
+		box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
+	} */
+
+	/* .caritas {
+		height: 320px;
+		width: 40%;
+		margin: 0;
+		background: rgb(27, 40, 56);
+		box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
+	}
+	.caritas a {
+		text-decoration: none;
+	}
+	.caritas li {
+		margin-top: 10px;
+		margin-bottom: 20px;
+		font-size: 20px;
+		margin-left: 20px;
+		color: #fff5f5;
+	}
+	.caritas h1,
+	.caritas h2 {
+		margin: 0;
+		margin-left: 20px;
+	}
+	.caritas h1 {
+		font-size: 20px;
+	}
+	.caritas h2 {
+		border: 0;
+		border-color: #161d24;
+		color: #fff5f5;
+		height: 18px;
+		border-radius: 5%;
+		width: 120px;
+		font-size: 14px;
+		text-align: center;
+		background: gray;
+	}
+	.caritas h3 {
+		margin-left: 20px;
+		margin-bottom: 10px;
+		font-size: 11px;
+		color: #fff5f5;
+	}
+
+	.caritas img {
+		height: 80px;
+		width: 180px;
+		margin-left: 10px;
+		margin-bottom: 10px;
+	} */
+
+	/* .baner3 {
+		background: rgba(1, 9, 32, 0.486); 
+		box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
+		height: 1000px;
+		position: relative; 
+	}
+	.baner3 a {
+		text-decoration: none;
+	}
+
+	.contb1 {
+		height: 200px;
+		display: flex;
+		padding-top: 20px; 
+		} */
+
+	/* .contb1 img {
+		height: 200px;
+		width: 1000px;
+		margin-left: 25%;
+		box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
+	}
+	.contb1 img : :hover {
+		box-shadow: 0 4px 15px rgba(255, 165, 0, 0.6);
+	}
+	.baner3 h1 {
+		font-family: sans-serif;
+		margin-left: 20%;
+		font-size: 20px;
+		font-weight: 50px;
+		margin-top: 40px;
+	}
+	.ofertas {
+		margin-top: 5px;
+		margin-left: 20%;
+		height: 350px;
+		width: 1000px;
+		margin: 1px solid;
+		display: flex;
+	} */
+	/* .oferta1 {
+		height: auto;
+		width: 325px;
+		margin-right: 10px;
+		border: 1px solid;
+	}
+	.oferta2 {
+		flex-direction: column;
+		border: 1px solid;
+		height: 168px;
+		width: 325px;
+		margin-bottom: 10px;
+	} */
 </style>
